@@ -16,13 +16,11 @@ const connect = function() {
     // },50)
   });
   
-  // conn.on('connect', () => {
-  // });
-  
   conn.on('data', (serverData) => {
     console.log('Server says: ', serverData);
   });
 
+  
   return conn;
 };
 
